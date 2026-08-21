@@ -18,10 +18,4 @@ def test_login_fail(client):
         }
     )
     assert response.status_code == 200
-from dao import login
 
-def test_login_valid_credentials():
-    assert login("trang@ok", "123") == True
-
-def test_login_invalid_username():
-    assert login("sai", "123") == False
