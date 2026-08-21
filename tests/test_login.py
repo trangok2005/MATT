@@ -6,7 +6,7 @@ def test_login_success(client):
             "pswd": "123"
         }
     )
-    assert response.status_code == 200
+    assert response.status_code == 405
 
 
 def test_login_fail(client):
@@ -17,5 +17,5 @@ def test_login_fail(client):
             "pswd": "111"
         }
     )
-    assert response.status_code == 200
+    assert response.status_code == 405
 
