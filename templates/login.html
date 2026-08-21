@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <form method="post">
+    <input type="text" name="email">
+    <input type="password" name="pswd">
+    <button type="submit">Đăng nhập</button>
+</form>
+
+{% if error %}
+<p>{{ error }}</p>
+{% endif %}
+</body>
+</html>
